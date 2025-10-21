@@ -11,7 +11,7 @@ local AdminPanelUI = WaitForUI:Wait(game:GetService("StarterGui").AdminPanelGui)
 
 APS:RegisterAdminPanel(AdminPanelUI)
 -- Getting the Admin panel UI.
-local AdminPanel = APS:GetAdminUI()
+local AdminPanel = APS:GetAdminPanelAsync()
 
 local Give = AdminPanel.Panel.Toolbar.GiveButton
 local Button = APS:RegisterToolbarButton(AdminPanel.Panel.Toolbar, Give)
